@@ -80,30 +80,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>日记 - hello</title>
+  <title>Diary</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fafafa; color: #333; }
-    .container { max-width: 400px; margin: 0 auto; padding: 100px 20px; }
-    .box { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 40px; text-align: center; }
-    .back { display: inline-block; margin-bottom: 30px; color: #888; font-size: 14px; text-decoration: none; }
-    .back:hover { color: #333; }
-    .title { font-size: 20px; margin-bottom: 30px; }
-    .input { width: 100%; padding: 12px 16px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; margin-bottom: 20px; outline: none; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fafafa; color: #333; min-height: 100vh; }
+    .container { max-width: 360px; margin: 0 auto; padding: 120px 20px; }
+    .content { text-align: center; }
+    .title { font-size: 16px; font-weight: 400; color: #666; margin-bottom: 30px; letter-spacing: 0.5px; }
+    .input { width: 100%; padding: 14px 16px; border: none; border-bottom: 1px solid #ddd; background: transparent; font-size: 16px; outline: none; text-align: center; }
     .input:focus { border-color: #333; }
-    .submit { width: 100%; padding: 12px; background: #333; color: #fff; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-    .submit:hover { background: #555; }
-    .error { color: #e74c3c; font-size: 12px; margin-top: 10px; display: none; }
+    .input::placeholder { color: #ccc; }
+    .submit { margin-top: 30px; padding: 12px 40px; background: #333; color: #fff; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; transition: opacity 0.2s; }
+    .submit:hover { opacity: 0.8; }
+    .error { color: #e74c3c; font-size: 12px; margin-top: 16px; display: none; }
+    .back { display: inline-block; margin-bottom: 40px; color: #999; font-size: 14px; text-decoration: none; }
+    .back:hover { color: #333; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="box">
+    <div class="content">
       <a href="/diary-gate" class="back">← 返回</a>
-      <h2 class="title">请输入密码</h2>
-      <input type="password" id="password" class="input" placeholder="输入密码...">
-      <button id="submit" class="submit">进入</button>
-      <p id="error" class="error">密码错误，请重试</p>
+      <p class="title">请输入密码</p>
+      <input type="password" id="password" class="input" placeholder="Password">
+      <button id="submit" class="submit">Enter</button>
+      <p id="error" class="error">密码错误</p>
     </div>
   </div>
   
@@ -119,6 +120,7 @@
         window.location.href = '/categories/日记';
       } else {
         error.style.display = 'block';
+        setTimeout(() => { error.style.display = 'none'; }, 3000);
       }
     });
     

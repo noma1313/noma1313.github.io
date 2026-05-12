@@ -390,3 +390,137 @@ body::after {
 .tk-avatar {
   border-color: #333 !important;
 }
+
+.home-outer {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 60px 20px !important;
+}
+
+.home-main {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+}
+
+.home-content {
+  background: #1a1a1a !important;
+  border: 1px solid #333 !important;
+  border-radius: 8px !important;
+  padding: 40px !important;
+  box-shadow: none !important;
+}
+
+.home-content h1,
+.home-content h2,
+.home-content h3 {
+  color: #fff !important;
+  margin-bottom: 16px !important;
+}
+
+.home-content h1 {
+  font-size: 2.5em !important;
+  text-align: center !important;
+  margin-bottom: 30px !important;
+}
+
+.home-content h2 {
+  font-size: 1.5em !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #333 !important;
+  margin-top: 30px !important;
+}
+
+.home-content p {
+  color: #ccc !important;
+  line-height: 1.8em !important;
+  margin: 16px 0 !important;
+}
+
+.home-content ul {
+  color: #ccc !important;
+  margin: 16px 0 16px 24px !important;
+  list-style: disc !important;
+}
+
+.home-content li {
+  margin: 8px 0 !important;
+}
+
+.home-content a {
+  color: #4a9eff !important;
+  text-decoration: none !important;
+}
+
+.home-content a:hover {
+  text-decoration: underline !important;
+}
+
+.home-content hr {
+  border: none !important;
+  border-top: 1px dashed #333 !important;
+  margin: 30px 0 !important;
+}
+
+.home-content em {
+  color: #888 !important;
+}
+
+.archive-outer {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 40px 20px !important;
+}
+
+.archive-content {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+}
+
+.archive-content .archives-wrap {
+  margin: 20px 0 !important;
+}
+
+.archive-year-wrap {
+  margin-bottom: 16px !important;
+}
+
+.archive-year {
+  color: #4a9eff !important;
+  font-size: 1.2em !important;
+  text-decoration: none !important;
+}
+
+.archive-article {
+  margin-bottom: 16px !important;
+}
+
+.archive-article-inner {
+  background: #1a1a1a !important;
+  border: 1px solid #333 !important;
+  border-radius: 4px !important;
+  padding: 16px 20px !important;
+  box-shadow: none !important;
+}
+
+.archive-article-title {
+  color: #fff !important;
+  font-size: 1.1em !important;
+  text-decoration: none !important;
+  display: block !important;
+  margin-bottom: 8px !important;
+}
+
+.archive-article-title:hover {
+  color: #4a9eff !important;
+}
+
+.archive-article-date {
+  color: #666 !important;
+  font-size: 0.85em !important;
+}
+
+#sidebar {
+  display: none !important;
+}
